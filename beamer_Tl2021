@@ -1,0 +1,43 @@
+% !TeX TS-program = xelatex
+\documentclass{beamer}
+\usetheme{Warsaw}
+
+\usefonttheme{serif}
+\usepackage{xepersian}
+\settextfont{Yas}
+
+\ExplSyntaxOn
+\cs_set_eq:NN
+\etex_iffontchar:D
+\tex_iffontchar:D
+\cs_undefine:N \c_one
+\int_const:Nn \c_one { 1 }
+\ExplSyntaxOff
+\setdigitfont{Yas}
+
+\title{یک اسلاید نمونه}
+\subtitle{زیرعنوان اسلاید}
+\author{مجتبیٰ احمدی}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+\maketitle
+\end{frame}
+\section{عنوان بخش}
+\begin{frame}
+\begin{block}{عنوان}
+متن ...
+\end{block}
+\end{frame}
+
+\end{document}
+
+
+Note: Processing with TL 2021 encounters an error!
+
+ Missing } inserted.<inserted text>}l.35 \end{frame} 
+ 
+ Solution: \input{command-Ahmadi}
+ 
